@@ -2,22 +2,22 @@
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta http-equiv="Content-Language" content="zh-tw">
-    <title>github上建立自己的blog - OA's blog</title>
+    <title>mac os 安裝 ruby on rails - OA's blog</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
 
     <meta name="robots" content="index,follow" />
     <meta name="author" content="吳政賢(OA Wu)" />
-    <meta name="keywords" content="吳政賢(OA Wu) | OA's blog | GitHub" />
-    <meta name="description" content="因為最近才知道 GitHub 有提供免費的 GitHub Pages 服務，所以就利用自己所會的工具(php、html、js、css)來做個玩具！那就是利用 GitHub Pages 來建置自己的部落格！！若是我記得沒錯，市面上好像有很多很多大大做過一樣的東西(ex: octopress... 等)了，但身為程式人，就是要自己來做一個屬於自己的作品！這項作品基本上被需要幾個條件，因為我是在 Mac 系統上開發的，而其他系統我沒測試，所以不敢說可用！而 Mac 上也要開啟 apache 以及 php 的功能。P.S. 如果懶得看這些文字敘述的話..... 我也有製作了簡單的 Youtube Demo!步驟開始首…" />
+    <meta name="keywords" content="吳政賢(OA Wu) | OA's blog" />
+    <meta name="description" content="說明這是最近在玩 ruby on rails 的安裝心得，因為一直安裝失敗，於是我只好重灌電腦並且完整的重新安裝與記錄！規格作業系統 Mac OS x 10.9.5系統更新 OSX。下載 &amp; 更新 Xcode。步驟安裝 homebrew 可以參考這篇。安裝 XQuartz。安裝 ImageMagick 需先有 X11 的 support,OSX 10.8 拿掉了..，載點。它是 .dmg 檔案，基本上就是下一步、下一步的安裝就可以，安裝完後重開。  安裝 ImageMagick brew install imagemagick。安裝 MySQL 可以參考這篇。安裝 RVM參考 https://rvm.io/rvm/install/，輸入指令: curl -L https://get.rvm.io | …" />
 
     <meta property="og:site_name" content="OA's blog" />
     <meta property="og:type" content="profile" />
-    <meta property="og:image" content="http://comdan66.github.io/blog/markdowns/2014-12-21_02-59-43/img/chmod%20777%20..png" alt="chmod 777 ." />
-    <meta property="og:title" content="github上建立自己的blog - OA's blog" />
+    <meta property="og:image" content="http://comdan66.github.io/blog/markdowns/2014-11-11_10-05-51/./img/01.png" alt="update os" />
+    <meta property="og:title" content="mac os 安裝 ruby on rails - OA's blog" />
     <meta property="og:locale" content="zh_TW" />
-    <meta property="og:description" content="因為最近才知道 GitHub 有提供免費的 GitHub Pages 服務，所以就利用自己所會的工具(php、html、js、css)來做個玩具！那就是利用 GitHub Pages 來建置自己的部落格！！若是我記得沒錯，市面上好像有很多很多大大做過一樣的東西(ex: octopress... 等)了，但身為程式人，就是要自己來做一個屬於自己的作品！這項作品基本上被需要幾個條件，因為我是在 Mac 系統上開發的，而其他系統我沒測試，所以不敢說可用！而 Mac 上也要開啟 apache 以及 php 的功能。P.S. 如果懶得看這些文字敘述的話..... 我也有製作了簡單的 Youtube Demo!步驟開始首…" />
-    <meta property="og:url" content="http://comdan66.github.io/blog/article/github上建立自己的blog.html" />
+    <meta property="og:description" content="說明這是最近在玩 ruby on rails 的安裝心得，因為一直安裝失敗，於是我只好重灌電腦並且完整的重新安裝與記錄！規格作業系統 Mac OS x 10.9.5系統更新 OSX。下載 &amp; 更新 Xcode。步驟安裝 homebrew 可以參考這篇。安裝 XQuartz。安裝 ImageMagick 需先有 X11 的 support,OSX 10.8 拿掉了..，載點。它是 .dmg 檔案，基本上就是下一步、下一步的安裝就可以，安裝完後重開。  安裝 ImageMagick brew install imagemagick。安裝 MySQL 可以參考這篇。安裝 RVM參考 https://rvm.io/rvm/install/，輸入指令: curl -L https://get.rvm.io | …" />
+    <meta property="og:url" content="http://comdan66.github.io/blog/article/mac os 安裝 ruby on rails.html" />
 
     <link href="../css/frame.css" rel="stylesheet" type="text/css">
     <link href="../css/frame_pc.css" rel="stylesheet" type="text/css">
@@ -90,101 +90,159 @@
       <div class='left'>
         <div class='block paper article'>
           <div class='title clearfix'>
-            <h2>github上建立自己的blog</h2>
-            <div class='date timeago' data-time='2014-12-21 02:59:43'>2014-12-21 02:59:43</div>
+            <h2>mac os 安裝 ruby on rails</h2>
+            <div class='date timeago' data-time='2014-11-11 10:05:51'>2014-11-11 10:05:51</div>
           </div>
           <div class='content'>
-<p>因為最近才知道 GitHub 有提供免費的 <a href="https://pages.github.com/">GitHub Pages</a> 服務，所以就利用自己所會的工具(php、html、js、css)來做個玩具！那就是利用 <a href="https://pages.github.com/">GitHub Pages</a> 來建置自己的部落格！！</p>
+<h3>說明</h3>
 
-<p><br>
-若是我記得沒錯，市面上好像有很多很多大大做過一樣的東西(ex: <a href="http://octopress.org/">octopress</a>... 等)了，但身為程式人，就是要自己來做一個屬於自己的作品！</p>
-
-<p><br></p>
-
-<p>這項作品基本上被需要幾個條件，因為我是在 Mac 系統上開發的，而其他系統我沒測試，所以不敢說可用！而 Mac 上也要開啟 apache 以及 php 的功能。</p>
-
-<p>P.S. 如果懶得看這些文字敘述的話..... 我也有製作了簡單的 Youtube Demo!</p>
-
-<iframe src="https://www.youtube.com/embed/pUBWKUEb7Do" width="90%" height="400" frameborder="0" allowfullscreen></iframe>
-
+<p>這是最近在玩 ruby on rails 的安裝心得，因為一直安裝失敗，於是我只好重灌電腦並且完整的重新安裝與記錄！</p>
 
 <p><br></p>
 
-<h3>步驟開始</h3>
+<h3>規格</h3>
 
-<p>首先，先至我的 <a href="https://github.com/comdan66/blog">GitHub</a> 將 blog 這個 repository clone 下來！指令: <code>git clone https://github.com/comdan66/blog.git</code>。</p>
-
-<p><br>
-當 Clone 下來後，進入資料夾並且先變更資料夾權限，以便於 php 產生靜態頁面！如果要 push 到自己的 <a href="https://pages.github.com/">GitHub Pages</a> 的話請記得更改自己的 <a href="http://git-scm.com/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E-%E8%88%87%E9%81%A0%E7%AB%AF%E5%8D%94%E5%90%8C%E5%B7%A5%E4%BD%9C">git remote</a> 後切換到自己的 gh-pages 的分支下！</p>
-
-<p><img src=".././markdowns/2014-12-21_02-59-43/img/chmod%20777%20..png" alt="chmod 777 ."></p>
-
-<p>完成以上步驟後，就可以開始新增文章啦！</p>
-
+<ul>
+<li>作業系統 Mac OS x 10.9.5</li>
+</ul>
 <p><br></p>
 
-<h3>新增文章</h3>
+<h3>系統</h3>
 
-<p>預設的文章存放位置在 <code>markdowns/</code> 下，基本上資料夾代表<strong>文章時間</strong>，其時間格式因為資料夾名稱不支援 <code>:</code> 的符號，所以這邊我定義格式為 <code>yyyy-mm-dd_hh-ii-ss</code>。</p>
-
-<p><img src=".././markdowns/2014-12-21_02-59-43/img/create%20article.png" alt="create article"></p>
-
-<p><br>
-新增玩資料夾後，內便可以新增文章啦，首先建立一個 <code>.md</code> 的檔案並且開啟它，在 mac 系統上面開啟 .md 檔案的應用程式建議可以使用 <a href="http://25.io/mou/">mou</a>，它是一個不錯的<strong>免費</strong> markdown 應用程式！</p>
-
-<p><img src=".././markdowns/2014-12-21_02-59-43/img/create%20blog.png" alt="create blog"></p>
-
-<p><br>
-當文章編輯完成後，將檔案匯出 <code>.html</code>，如果不想匯出 .html 的話可以更改 <code>config/system.php</code> 內的變數 <code>$_format</code> 的值，將其改成 <code>.md</code> 即可不用再匯出 .html。不過這邊建議使用 .html 格式比較保險 ：）</p>
-
-<p><img src=".././markdowns/2014-12-21_02-59-43/img/output%20html.png" alt="output html"></p>
-
-<p><br>
-匯出後的 .html 就放在跟 .md 一樣的位置即可！ 其檔名就會是文章的標題！</p>
-
-<p><img src=".././markdowns/2014-12-21_02-59-43/img/put%20html.png" alt="put html"></p>
-
-<p><br>
-同事在一樣的目錄下新增檔案名稱 <code>tags.txt</code> 的文字檔，就可以對此邊文章做設定標簽的功能！
-每個標簽皆用段行分開即可！</p>
-
-<p><img src=".././markdowns/2014-12-21_02-59-43/img/tag.png" alt="tag"></p>
-
-<p><br>
-完成文章新增、標籤設定後，就可以準備進入下一步驟啦！</p>
-
-<p><img src=".././markdowns/2014-12-21_02-59-43/img/article%20ok.png" alt="article ok"></p>
-
+<ul>
+<li><p>更新 OSX。<br><img src=".././markdowns/2014-11-11_10-05-51/./img/01.png" alt="update os"></p></li>
+<li><p>下載 &amp; 更新 Xcode。<br><img src=".././markdowns/2014-11-11_10-05-51/./img/02.png" alt="update xcode"></p></li>
+</ul>
 <p><br></p>
 
-<h3>Build！</h3>
+<h3>步驟</h3>
 
-<p>這個步驟主要在產生 html 的文件，首先開啟終端機，並且在資料夾內輸入指令 <code>php build.php</code>，就可以產生出靜態 .html 頁面啦！</p>
+<ul>
+<li><p>安裝 homebrew 可以參考這篇。</p></li>
+<li>
+<p>安裝 XQuartz。</p>
 
-<p><img src=".././markdowns/2014-12-21_02-59-43/img/build.png" alt="build"></p>
+<ul>
+<li>安裝 ImageMagick 需先有 X11 的 support,OSX 10.8 拿掉了..，<a href="http://xquartz.macosforge.org/landing">載點</a>。</li>
+<li>
+<p>它是 <strong>.dmg</strong> 檔案，基本上就是下一步、下一步的安裝就可以，安裝完後重開。</p>
 
-<p><br>
-完成 build 後，就可開啟網址 <code>http://127.0.0.1/blog/</code> 後，就可以看到自己所建立的文章啦！</p>
+<p>  <img src=".././markdowns/2014-11-11_10-05-51/./img/08.png" width="300" alt="install XQuartz"></p>
+</li>
+</ul>
+</li>
+<li><p>安裝 ImageMagick <code>brew install imagemagick</code>。<br><img src=".././markdowns/2014-11-11_10-05-51/./img/09.png" alt="brew install imagemagick"></p></li>
+<li><p>安裝 MySQL 可以參考這篇。</p></li>
+<li>
+<p>安裝 <a href="https://rvm.io/">RVM</a></p>
 
-<p><img src=".././markdowns/2014-12-21_02-59-43/img/ok.png" alt="ok"></p>
+<ul>
+<li><p>參考 <a href="https://rvm.io/rvm/install/">https://rvm.io/rvm/install/</a>，輸入指令: <code>curl -L https://get.rvm.io | bash -s stable</code>。<br><img src=".././markdowns/2014-11-11_10-05-51/./img/17.png" alt="install rvm"></p></li>
+<li><p>檢查是否安裝成功，重新開啟 iTerm，輸入 <code>rvm -v</code>。<br><img src=".././markdowns/2014-11-11_10-05-51/./img/18.png" alt="check rvm"></p></li>
+<li><p>若尚未安裝 <a href="https://github.com/robbyrussell/oh-my-zsh">oh my zsh</a><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> 就執行指令    : <code>echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] &amp;&amp; . "$HOME/.rvm/scripts/rvm" # Load RVM function' &gt;&gt; ~/.bash_profile</code>。</p></li>
+<li><p>若安裝 rvm 後才安裝 <a href="https://github.com/robbyrussell/oh-my-zsh">oh my zsh</a> 就執行: <code>echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] &amp;&amp; . "$HOME/.rvm/scripts/rvm" # Load RVM function' &gt;&gt; ~/.zshrc</code>。</p></li>
+<li><p>若指定預設 ruby 版本時出現權限問題可以這樣做，輸入指令: <code>suod chown xxx:root /usr/local/bin #xxx 是你的user</code>。</p></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>rvm 使用<a href="http://beginrescueend.com/rvm/basics/">範例</a></p>
 
+<pre><code>  rvm list                      # 列出電腦中已經安裝的 ruby 版本
+  rvm list known                # 列出所有可安裝的 ruby 版本
+  rvm ruby-1.8.7-p334           # 切換ruby 版本到 ruby-1.8.7-p334
+  rvm ruby-1.8.7-p334 --default # 設定 ruby-1.8.7-p334 為預設的版本
+  rvm install ruby-1.8.7-p334   # 安裝 ruby-1.8.7-p334
+</code></pre>
+</blockquote>
+
+<ul>
+<li>安裝 <a href="https://www.ruby-lang.org/zh_tw/">ruby</a>
+
+<ul>
+<li><p>首先使用 rvm 列出可以安裝的 ruby 版本，指令: <code>rvm list known</code>。<br><img src=".././markdowns/2014-11-11_10-05-51/./img/19.png" alt="rvm list known"></p></li>
+<li><p>安裝 2.1.3，指令: <code>rvm install 2.1.3</code>。<br><img src=".././markdowns/2014-11-11_10-05-51/./img/20.png" alt="rvm install 2.1.3"></p></li>
+<li><p>測試是否安裝成功，指令: <code>ruby -v</code>。<br><img src=".././markdowns/2014-11-11_10-05-51/./img/21.png" alt="ruby -v"></p></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>若有出現 readline.c 的錯誤時，可以試著以下指令:</p>
+
+<pre><code>rvm package install readline
+# 然後在安裝指令的後面加上 -C --with-readline-dir=$rvm_path/usr
+rvm install 1.9.3 -C --with-readline-dir=$rvm_path/usr
+</code></pre>
+</blockquote>
+
+<ul>
+<li>
+<p>安裝 gem</p>
+
+<ul>
+<li><p>指令: <code>rvm rubygems current</code>。<br><img src=".././markdowns/2014-11-11_10-05-51/./img/22.png" alt="rvm rubygems current"></p></li>
+<li><p>檢查是否安裝成功，指令: <code>gem -v</code>。<br><img src=".././markdowns/2014-11-11_10-05-51/./img/23.png" alt="gem -v"></p></li>
+<li>
+<p>設定 <code>--no-ri --no-rdoc</code> 的參數，一般安裝 gem 也會同時安裝該 gem 的文件，但通常這些文件都是在網路上看的，因此不需要浪費空間和時間安裝在自己的電腦。</p>
+
+<pre><code>vim ~/.gemrc   # 打開 ~/.gemrc
+# 加上以下後, 存檔重新登入命令列即可
+gem: --no-ri --no-rdoc
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>安裝 bundler</p>
+
+<ul>
+<li>指令<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>: <code>gem install bundler --no-ri --no-rdoc</code>。<br><img src=".././markdowns/2014-11-11_10-05-51/./img/24.png" alt="gem install bundler">
+</li>
+</ul>
+</li>
+<li>
+<p>安裝 rails</p>
+
+<ul>
+<li><p>如果是要安裝目前最穩定版本，指令: <code>gem install rails --no-ri --no-rdoc</code>。<br><img src=".././markdowns/2014-11-11_10-05-51/./img/25.png" alt="gem install rails"></p></li>
+<li><p>檢查是否安裝成功，指令: <code>rails -v</code>。<br><img src=".././markdowns/2014-11-11_10-05-51/./img/26.png" alt="rails -v"></p></li>
+<li><p>如果是要安裝特別版本，指令: <code>gem install rails -v=3.2.8 --no-ri --no-rdoc</code>。</p></li>
+</ul>
+</li>
+</ul>
 <p><br></p>
 
-<h3>小總結</h3>
+<h3>以上參考</h3>
 
-<p>基本上整體程式作品大致上就是這樣一個 run，主要是興趣寫作啦，如果有興趣的各位，歡迎 clone 回去用吧 ：）</p>
+<ul>
+<li>Rails 101 - <a href="https://readmoo.com/book/210010467000101">https://readmoo.com/book/210010467000101</a>
+</li>
+<li>五樓專業團隊 - <a href="http://pm.5fpro.com/projects/public-wiki/wiki/MaxOS_-_Ruby_on_Rails">http://pm.5fpro.com/projects/public-wiki/wiki/MaxOS<em>-</em>Ruby_on_Rails</a>
+</li>
+</ul>
+<div class="footnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>一般新的 mac 都不會安裝 oh my zsh。<a href="#fnref:1" rev="footnote">↩</a></p>
+</li>
+<li id="fn:2">
+<p>若已經有設定 <code>--no-ri --no-rdoc</code> 為預設參數，則就不需要再加上 <code>--no-ri --no-rdoc</code>。<a href="#fnref:2" rev="footnote">↩</a></p>
+</li>
+</ol>
+</div>
+
 </div>
           <div class='info clearfix'>
             <div class='tags all'>
-                          <span><a href=".././tag/GitHub">GitHub</a></span>
-                      </div>
+        &nbsp;&nbsp;            </div>
           </div>
         </div>
       </div>
 
       <div class='right'>
                 <div class='pin oa_infos'>
-                <div class='message hide' data-name='github上建立自己的blog'></div>
+                <div class='message hide' data-name='mac os 安裝 ruby on rails'></div>
                 <div class='line1'></div><div class='line2'></div>
                 <a href='http://www.ioa.tw' target='_blank'>
                   <div class='avatar_outline'>

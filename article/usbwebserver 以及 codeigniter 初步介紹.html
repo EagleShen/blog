@@ -2,22 +2,22 @@
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta http-equiv="Content-Language" content="zh-tw">
-    <title>github上建立自己的blog - OA's blog</title>
+    <title>usbwebserver 以及 codeigniter 初步介紹 - OA's blog</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
 
     <meta name="robots" content="index,follow" />
     <meta name="author" content="吳政賢(OA Wu)" />
-    <meta name="keywords" content="吳政賢(OA Wu) | OA's blog | GitHub" />
-    <meta name="description" content="因為最近才知道 GitHub 有提供免費的 GitHub Pages 服務，所以就利用自己所會的工具(php、html、js、css)來做個玩具！那就是利用 GitHub Pages 來建置自己的部落格！！若是我記得沒錯，市面上好像有很多很多大大做過一樣的東西(ex: octopress... 等)了，但身為程式人，就是要自己來做一個屬於自己的作品！這項作品基本上被需要幾個條件，因為我是在 Mac 系統上開發的，而其他系統我沒測試，所以不敢說可用！而 Mac 上也要開啟 apache 以及 php 的功能。P.S. 如果懶得看這些文字敘述的話..... 我也有製作了簡單的 Youtube Demo!步驟開始首…" />
+    <meta name="keywords" content="吳政賢(OA Wu) | OA's blog | USBWebserver | Apache | PHP | Codeigniter" />
+    <meta name="description" content="說明這篇主是要將 USB 變成行動的 Web Server，先Google一下，下載主要程式 USBWebserver v8.5.rar 和 CodeIgniter_2.1.3.zip，這兩個東西都是免費的。規格作業系統: Windows7 or XP (其他系統我沒側試過)步驟USBWebserver v8.5 是一套免安裝版的 Apache + php + MySQL on USB Device!解開壓縮後，根目錄 ./USBWebserver v8.5/8.5/root/。執行檔在 ./USBWebserver v8.5/8.5/usbwebserver.exe 將其啟動後，便可以使用了。Algemeen - 選項會有一些關於 Server 的初步相關設定位置。Apache - 選項則是可以 Start、Stop Web-Server。MySQL - …" />
 
     <meta property="og:site_name" content="OA's blog" />
     <meta property="og:type" content="profile" />
-    <meta property="og:image" content="http://comdan66.github.io/blog/markdowns/2014-12-21_02-59-43/img/chmod%20777%20..png" alt="chmod 777 ." />
-    <meta property="og:title" content="github上建立自己的blog - OA's blog" />
+    <meta property="og:image" content="http://comdan66.github.io/blog/img/og.png" />
+    <meta property="og:title" content="usbwebserver 以及 codeigniter 初步介紹 - OA's blog" />
     <meta property="og:locale" content="zh_TW" />
-    <meta property="og:description" content="因為最近才知道 GitHub 有提供免費的 GitHub Pages 服務，所以就利用自己所會的工具(php、html、js、css)來做個玩具！那就是利用 GitHub Pages 來建置自己的部落格！！若是我記得沒錯，市面上好像有很多很多大大做過一樣的東西(ex: octopress... 等)了，但身為程式人，就是要自己來做一個屬於自己的作品！這項作品基本上被需要幾個條件，因為我是在 Mac 系統上開發的，而其他系統我沒測試，所以不敢說可用！而 Mac 上也要開啟 apache 以及 php 的功能。P.S. 如果懶得看這些文字敘述的話..... 我也有製作了簡單的 Youtube Demo!步驟開始首…" />
-    <meta property="og:url" content="http://comdan66.github.io/blog/article/github上建立自己的blog.html" />
+    <meta property="og:description" content="說明這篇主是要將 USB 變成行動的 Web Server，先Google一下，下載主要程式 USBWebserver v8.5.rar 和 CodeIgniter_2.1.3.zip，這兩個東西都是免費的。規格作業系統: Windows7 or XP (其他系統我沒側試過)步驟USBWebserver v8.5 是一套免安裝版的 Apache + php + MySQL on USB Device!解開壓縮後，根目錄 ./USBWebserver v8.5/8.5/root/。執行檔在 ./USBWebserver v8.5/8.5/usbwebserver.exe 將其啟動後，便可以使用了。Algemeen - 選項會有一些關於 Server 的初步相關設定位置。Apache - 選項則是可以 Start、Stop Web-Server。MySQL - …" />
+    <meta property="og:url" content="http://comdan66.github.io/blog/article/usbwebserver 以及 codeigniter 初步介紹.html" />
 
     <link href="../css/frame.css" rel="stylesheet" type="text/css">
     <link href="../css/frame_pc.css" rel="stylesheet" type="text/css">
@@ -90,93 +90,80 @@
       <div class='left'>
         <div class='block paper article'>
           <div class='title clearfix'>
-            <h2>github上建立自己的blog</h2>
-            <div class='date timeago' data-time='2014-12-21 02:59:43'>2014-12-21 02:59:43</div>
+            <h2>usbwebserver 以及 codeigniter 初步介紹</h2>
+            <div class='date timeago' data-time='2013-07-22 23:25:00'>2013-07-22 23:25:00</div>
           </div>
           <div class='content'>
-<p>因為最近才知道 GitHub 有提供免費的 <a href="https://pages.github.com/">GitHub Pages</a> 服務，所以就利用自己所會的工具(php、html、js、css)來做個玩具！那就是利用 <a href="https://pages.github.com/">GitHub Pages</a> 來建置自己的部落格！！</p>
+<h3>說明</h3>
 
-<p><br>
-若是我記得沒錯，市面上好像有很多很多大大做過一樣的東西(ex: <a href="http://octopress.org/">octopress</a>... 等)了，但身為程式人，就是要自己來做一個屬於自己的作品！</p>
-
-<p><br></p>
-
-<p>這項作品基本上被需要幾個條件，因為我是在 Mac 系統上開發的，而其他系統我沒測試，所以不敢說可用！而 Mac 上也要開啟 apache 以及 php 的功能。</p>
-
-<p>P.S. 如果懶得看這些文字敘述的話..... 我也有製作了簡單的 Youtube Demo!</p>
-
-<iframe src="https://www.youtube.com/embed/pUBWKUEb7Do" width="90%" height="400" frameborder="0" allowfullscreen></iframe>
-
+<p>這篇主是要將 USB 變成行動的 Web Server，先Google一下，下載主要程式 <a href="http://www.usbwebserver.net/en/download.php">USBWebserver v8.5.rar</a> 和 <a href="https://ellislab.com/codeigniter/user-guide/installation/downloads.html">CodeIgniter_2.1.3.zip</a>，這兩個東西都是免費的。</p>
 
 <p><br></p>
 
-<h3>步驟開始</h3>
+<h3>規格</h3>
 
-<p>首先，先至我的 <a href="https://github.com/comdan66/blog">GitHub</a> 將 blog 這個 repository clone 下來！指令: <code>git clone https://github.com/comdan66/blog.git</code>。</p>
-
-<p><br>
-當 Clone 下來後，進入資料夾並且先變更資料夾權限，以便於 php 產生靜態頁面！如果要 push 到自己的 <a href="https://pages.github.com/">GitHub Pages</a> 的話請記得更改自己的 <a href="http://git-scm.com/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E-%E8%88%87%E9%81%A0%E7%AB%AF%E5%8D%94%E5%90%8C%E5%B7%A5%E4%BD%9C">git remote</a> 後切換到自己的 gh-pages 的分支下！</p>
-
-<p><img src=".././markdowns/2014-12-21_02-59-43/img/chmod%20777%20..png" alt="chmod 777 ."></p>
-
-<p>完成以上步驟後，就可以開始新增文章啦！</p>
+<p>作業系統: Windows7 or XP (其他系統我沒側試過)</p>
 
 <p><br></p>
 
-<h3>新增文章</h3>
+<h3>步驟</h3>
 
-<p>預設的文章存放位置在 <code>markdowns/</code> 下，基本上資料夾代表<strong>文章時間</strong>，其時間格式因為資料夾名稱不支援 <code>:</code> 的符號，所以這邊我定義格式為 <code>yyyy-mm-dd_hh-ii-ss</code>。</p>
+<ul>
+<li>
+<p>USBWebserver v8.5 是一套免安裝版的 Apache + php + MySQL on USB Device!</p>
 
-<p><img src=".././markdowns/2014-12-21_02-59-43/img/create%20article.png" alt="create article"></p>
+<ul>
+<li><p>解開壓縮後，根目錄 <code>./USBWebserver v8.5/8.5/root/</code>。</p></li>
+<li><p>執行檔在 <code>./USBWebserver v8.5/8.5/usbwebserver.exe</code> 將其啟動後，便可以使用了。</p></li>
+<li><p>Algemeen - 選項會有一些關於 Server 的初步相關設定位置。</p></li>
+<li><p>Apache - 選項則是可以 Start、Stop Web-Server。</p></li>
+<li><p>MySQL - 選項則是可以 Start、Stop MySQL-Server。</p></li>
+<li><p>Instellingen - 選項主要是設定本程式的語言、以及根目錄位置還有 Web-Server、MySQL-Server 的 Port<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>。</p></li>
+</ul>
+</li>
+<li>
+<p>Codeigniter 是一套 <strong>MVC架構</strong><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> 的Framework 框架，解開壓縮後主要先注意幾個地方！</p>
 
-<p><br>
-新增玩資料夾後，內便可以新增文章啦，首先建立一個 <code>.md</code> 的檔案並且開啟它，在 mac 系統上面開啟 .md 檔案的應用程式建議可以使用 <a href="http://25.io/mou/">mou</a>，它是一個不錯的<strong>免費</strong> markdown 應用程式！</p>
-
-<p><img src=".././markdowns/2014-12-21_02-59-43/img/create%20blog.png" alt="create blog"></p>
-
-<p><br>
-當文章編輯完成後，將檔案匯出 <code>.html</code>，如果不想匯出 .html 的話可以更改 <code>config/system.php</code> 內的變數 <code>$_format</code> 的值，將其改成 <code>.md</code> 即可不用再匯出 .html。不過這邊建議使用 .html 格式比較保險 ：）</p>
-
-<p><img src=".././markdowns/2014-12-21_02-59-43/img/output%20html.png" alt="output html"></p>
-
-<p><br>
-匯出後的 .html 就放在跟 .md 一樣的位置即可！ 其檔名就會是文章的標題！</p>
-
-<p><img src=".././markdowns/2014-12-21_02-59-43/img/put%20html.png" alt="put html"></p>
-
-<p><br>
-同事在一樣的目錄下新增檔案名稱 <code>tags.txt</code> 的文字檔，就可以對此邊文章做設定標簽的功能！
-每個標簽皆用段行分開即可！</p>
-
-<p><img src=".././markdowns/2014-12-21_02-59-43/img/tag.png" alt="tag"></p>
-
-<p><br>
-完成文章新增、標籤設定後，就可以準備進入下一步驟啦！</p>
-
-<p><img src=".././markdowns/2014-12-21_02-59-43/img/article%20ok.png" alt="article ok"></p>
-
-<p><br></p>
-
-<h3>Build！</h3>
-
-<p>這個步驟主要在產生 html 的文件，首先開啟終端機，並且在資料夾內輸入指令 <code>php build.php</code>，就可以產生出靜態 .html 頁面啦！</p>
-
-<p><img src=".././markdowns/2014-12-21_02-59-43/img/build.png" alt="build"></p>
-
-<p><br>
-完成 build 後，就可開啟網址 <code>http://127.0.0.1/blog/</code> 後，就可以看到自己所建立的文章啦！</p>
-
-<p><img src=".././markdowns/2014-12-21_02-59-43/img/ok.png" alt="ok"></p>
-
-<p><br></p>
-
+<ul>
+<li><p>系統開啟後網頁首頁會在 <code>./CodeIgniter_2.1.3/index.php</code>，但點開來看內容後會發現裡面都跟顯示出來的網頁不一樣。</p></li>
+<li><p>首先開啟 <code>./CodeIgniter_2.1.3/application/config/routes.php</code> 會發現裡面有一行 <code>$route['default_controller'] = "welcome";</code> 便可以知道首頁是指向了welcome頁面。</p></li>
+<li><p>開啟 <code>./CodeIgniter_2.1.3/application/controllers/welcome.php</code> 這隻檔案就是 Controller 的程式。</p></li>
+<li><p>開啟 <code>./CodeIgniter_2.1.3/application/views/welcome_message.php</code> 這隻檔案就是 View 的程式。</p></li>
+<li><p>Model 的程式則是放在 <code>./CodeIgniter_2.1.3/application/models/</code> 裡面，但 Welcome 的範例沒有使用的 Model 的功能所以就看不到相關檔案了。</p></li>
+<li><p>所以重點是 application 下面的 controllers、views、models 這三個資料夾。</p></li>
+</ul>
+</li>
+</ul>
 <h3>小總結</h3>
 
-<p>基本上整體程式作品大致上就是這樣一個 run，主要是興趣寫作啦，如果有興趣的各位，歡迎 clone 回去用吧 ：）</p>
+<p>對於我來說 MVC，簡單說就是一種人家做好的介在 <strong>php邏輯判斷</strong> 與 <strong>html版面排版</strong> 以及 <strong>資料庫</strong> 等資料處理間的工具，都以php物件的概念處理，但還是要稍微學一下，它將很多東西都包好了包含了 url處理、Database工具... 等的 Class、Function。</p>
+
+<p>相關學習可以先參考以下網頁 :</p>
+
+<ul>
+<li><a href="http://www.codeigniter.org.tw/user_guide/index.html">http://www.codeigniter.org.tw/user_guide/index.html</a></li>
+<li><a href="http://www.slideshare.net/appleboy/introduction-to-mvc-of-codeigniter-21x">http://www.slideshare.net/appleboy/introduction-to-mvc-of-codeigniter-21x</a></li>
+</ul>
+<p>以上我也還在學習，有興趣的話，可以看看一起分享成長，如果有誤的話歡迎指教，謝謝囉。</p>
+<div class="footnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>通常習慣上，會這樣設定 Web-Server Port : 80, MySQL-Server : 3306<a href="#fnref:1" rev="footnote">↩</a></p>
+</li>
+<li id="fn:2">
+<p>MVC 架構概念最主要是將網頁分成三大部分 Model、View、Controller，主要概意就是將網站拆開 邏輯、版型，好讓設計者容易維護，更多ＭVC: <a href="http://zh.wikipedia.org/zh-tw/MVC">http://zh.wikipedia.org/zh-tw/MVC</a><a href="#fnref:2" rev="footnote">↩</a></p>
+</li>
+</ol>
+</div>
+
 </div>
           <div class='info clearfix'>
             <div class='tags all'>
-                          <span><a href=".././tag/GitHub">GitHub</a></span>
+                          <span><a href=".././tag/USBWebserver">USBWebserver</a></span>
+                            <span><a href=".././tag/Apache">Apache</a></span>
+                            <span><a href=".././tag/PHP">PHP</a></span>
+                            <span><a href=".././tag/Codeigniter">Codeigniter</a></span>
                       </div>
           </div>
         </div>
@@ -184,7 +171,7 @@
 
       <div class='right'>
                 <div class='pin oa_infos'>
-                <div class='message hide' data-name='github上建立自己的blog'></div>
+                <div class='message hide' data-name='usbwebserver 以及 codeigniter 初步介紹'></div>
                 <div class='line1'></div><div class='line2'></div>
                 <a href='http://www.ioa.tw' target='_blank'>
                   <div class='avatar_outline'>
