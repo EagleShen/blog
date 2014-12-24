@@ -59,9 +59,7 @@
 <br/>
 ### 2013.08.03 21:44 補充
 
-Windows 安裝 Apache2、php5、MySQL、phpMyAdmin...等
-
-可以參考 : http://always-coding.blogspot.tw/2013/08/apachemysqlphp.html
+Windows 安裝 Apache2、php5、MySQL、phpMyAdmin...等更詳細內容，可以參考: [手動安裝 Apache、MySQL、PHP 以及相關設定](手動安裝 Apache、MySQL、PHP 以及相關設定.html)
 
 
 

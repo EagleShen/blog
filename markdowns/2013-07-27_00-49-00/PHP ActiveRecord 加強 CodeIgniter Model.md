@@ -69,7 +69,7 @@
 <br />
 ### 2013.08.03 21:45 補充
 
-完整自己手動安裝可以參考這篇 : http://always-coding.blogspot.tw/2013/08/php-codeigniter-frame-php-activerecord.html
+完整自己手動安裝可以參考這篇: [當 codeigniter 碰上 php-activerecord](當 codeigniter 碰上 php-activerecord.html)
 
 
 [^1]: 此步驟要有安裝 php 才可行，若是使用 之前文章 提到的 USBWebserver 的話，就 cmd.exe 目錄移到 USBWebserver 的 php目錄 下，並在此目錄下指令 php ../root/CodeIgniter/tools/spark install php-activerecord 執行過程會有多個錯誤警告訊息，但按確定繼續即可，完後會發現 php 目錄下多出 sparks 資料夾，再將其移到 CodeIgniter 目錄下即可。
