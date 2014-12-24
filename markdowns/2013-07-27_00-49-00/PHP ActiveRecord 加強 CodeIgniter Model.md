@@ -1,5 +1,5 @@
 ### 說明
-繼上次初步講解了 [CodeIgniter](http://comdan66.github.io/blog/article/USBWebserver%20%E4%BB%A5%E5%8F%8A%20CodeIgniter%20%E5%88%9D%E6%AD%A5%E4%BB%8B%E7%B4%B9.html) 的使用後，這次整理了最近學到的東西 **PHP ActiveRecord**，他是 CI 的一個 spark 擴充功能，在 Linux 或者 MAC OS 其實比較好安裝，如果要在 windows 上就不好弄了..
+繼上次初步講解了 [CodeIgniter](usbwebserver 以及 codeigniter 初步介紹.html) 的使用後，這次整理了最近學到的東西 **PHP ActiveRecord**，他是 CI 的一個 spark 擴充功能，在 Linux 或者 MAC OS 其實比較好安裝，如果要在 windows 上就不好弄了..
 
 其主要是將 CI Model 加強化的 ORM，讓 Model 在使用資料庫上更加的人性化，Google 一下就會有很多資料了，在這邊就不多做解釋了。
 
