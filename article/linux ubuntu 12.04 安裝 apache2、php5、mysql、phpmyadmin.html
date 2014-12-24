@@ -2,22 +2,22 @@
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta http-equiv="Content-Language" content="zh-tw">
-    <title>github上建立自己的blog - OA's blog</title>
+    <title>linux ubuntu 12.04 安裝 apache2、php5、mysql、phpmyadmin - OA's blog</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
 
     <meta name="robots" content="index,follow" />
     <meta name="author" content="吳政賢(OA Wu)" />
-    <meta name="keywords" content="吳政賢(OA Wu) | OA's blog | GitHub" />
-    <meta name="description" content="因為最近才知道 GitHub 有提供免費的 GitHub Pages 服務，所以就利用自己所會的工具(php、html、js、css)來做個玩具！那就是利用 GitHub Pages 來建置自己的部落格！！若是我記得沒錯，市面上好像有很多很多大大做過一樣的東西(ex: octopress... 等)了，但身為程式人，就是要自己來做一個屬於自己的作品！這項作品基本上被需要幾個條件，因為我是在 Mac 系統上開發的，而其他系統我沒測試，所以不敢說可用！而 Mac 上也要開啟 apache 以及 php 的功能。P.S. 如果懶得看這些文字敘述的話..... 我也有製作了簡單的 Youtube Demo!步驟開始首…" />
+    <meta name="keywords" content="吳政賢(OA Wu) | OA's blog | LAMP | Apache | PHP | MySQL | phpMyAdmin" />
+    <meta name="description" content="說明以下分享一下最近在 Linux ubuntu 安裝 Apache 的心得。我依照步驟沒有出錯，但不敢保證不會有任何狀況發生，但目前是OK的!規格作業系統: Ubuntu 12.04 (LTS)首先開啟終端機，開啟終端機快捷鍵: Ctrl + Alt + T步驟先切換使用者至 root權限 以便後面步驟不用每次都要求認證，所以終端機先輸入 sudo du，此時會要你輸入 root密碼，輸入完密碼後終端機之後便會以 root身分 執行指令。先將位置移到根目錄，可以使用 cd ~ 移到根目錄。安裝 MySQL，終端機輸入 apt-get install mysql-server mysql-client，安裝過程中會要求設定 MySQL 的…" />
 
     <meta property="og:site_name" content="OA's blog" />
     <meta property="og:type" content="profile" />
-    <meta property="og:image" content="http://comdan66.github.io/blog/markdowns/2014-12-21_02-59-43/img/chmod%20777%20..png" alt="chmod 777 ." />
-    <meta property="og:title" content="github上建立自己的blog - OA's blog" />
+    <meta property="og:image" content="http://comdan66.github.io/blog/img/og.png" />
+    <meta property="og:title" content="linux ubuntu 12.04 安裝 apache2、php5、mysql、phpmyadmin - OA's blog" />
     <meta property="og:locale" content="zh_TW" />
-    <meta property="og:description" content="因為最近才知道 GitHub 有提供免費的 GitHub Pages 服務，所以就利用自己所會的工具(php、html、js、css)來做個玩具！那就是利用 GitHub Pages 來建置自己的部落格！！若是我記得沒錯，市面上好像有很多很多大大做過一樣的東西(ex: octopress... 等)了，但身為程式人，就是要自己來做一個屬於自己的作品！這項作品基本上被需要幾個條件，因為我是在 Mac 系統上開發的，而其他系統我沒測試，所以不敢說可用！而 Mac 上也要開啟 apache 以及 php 的功能。P.S. 如果懶得看這些文字敘述的話..... 我也有製作了簡單的 Youtube Demo!步驟開始首…" />
-    <meta property="og:url" content="http://comdan66.github.io/blog/article/github上建立自己的blog.html" />
+    <meta property="og:description" content="說明以下分享一下最近在 Linux ubuntu 安裝 Apache 的心得。我依照步驟沒有出錯，但不敢保證不會有任何狀況發生，但目前是OK的!規格作業系統: Ubuntu 12.04 (LTS)首先開啟終端機，開啟終端機快捷鍵: Ctrl + Alt + T步驟先切換使用者至 root權限 以便後面步驟不用每次都要求認證，所以終端機先輸入 sudo du，此時會要你輸入 root密碼，輸入完密碼後終端機之後便會以 root身分 執行指令。先將位置移到根目錄，可以使用 cd ~ 移到根目錄。安裝 MySQL，終端機輸入 apt-get install mysql-server mysql-client，安裝過程中會要求設定 MySQL 的…" />
+    <meta property="og:url" content="http://comdan66.github.io/blog/article/linux ubuntu 12.04 安裝 apache2、php5、mysql、phpmyadmin.html" />
 
     <link href="../css/frame.css" rel="stylesheet" type="text/css">
     <link href="../css/frame_pc.css" rel="stylesheet" type="text/css">
@@ -90,93 +90,96 @@
       <div class='left'>
         <div class='block paper article'>
           <div class='title clearfix'>
-            <h2>github上建立自己的blog</h2>
-            <div class='date timeago' data-time='2014-12-21 02:59:43'>2014-12-21 02:59:43</div>
+            <h2>linux ubuntu 12.04 安裝 apache2、php5、mysql、phpmyadmin</h2>
+            <div class='date timeago' data-time='2013-07-20 22:03:00'>2013-07-20 22:03:00</div>
           </div>
           <div class='content'>
-<p>因為最近才知道 GitHub 有提供免費的 <a href="https://pages.github.com/">GitHub Pages</a> 服務，所以就利用自己所會的工具(php、html、js、css)來做個玩具！那就是利用 <a href="https://pages.github.com/">GitHub Pages</a> 來建置自己的部落格！！</p>
+<h3>說明</h3>
 
-<p><br>
-若是我記得沒錯，市面上好像有很多很多大大做過一樣的東西(ex: <a href="http://octopress.org/">octopress</a>... 等)了，但身為程式人，就是要自己來做一個屬於自己的作品！</p>
+<p>以下分享一下最近在 Linux ubuntu 安裝 Apache 的心得。</p>
 
-<p><br></p>
-
-<p>這項作品基本上被需要幾個條件，因為我是在 Mac 系統上開發的，而其他系統我沒測試，所以不敢說可用！而 Mac 上也要開啟 apache 以及 php 的功能。</p>
-
-<p>P.S. 如果懶得看這些文字敘述的話..... 我也有製作了簡單的 Youtube Demo!</p>
-
-<iframe src="https://www.youtube.com/embed/pUBWKUEb7Do" width="90%" height="400" frameborder="0" allowfullscreen></iframe>
-
+<p>我依照步驟沒有出錯，但不敢保證不會有任何狀況發生，但目前是OK的!</p>
 
 <p><br></p>
 
-<h3>步驟開始</h3>
+<h3>規格</h3>
 
-<p>首先，先至我的 <a href="https://github.com/comdan66/blog">GitHub</a> 將 blog 這個 repository clone 下來！指令: <code>git clone https://github.com/comdan66/blog.git</code>。</p>
+<p>作業系統: Ubuntu 12.04 (LTS)</p>
 
-<p><br>
-當 Clone 下來後，進入資料夾並且先變更資料夾權限，以便於 php 產生靜態頁面！如果要 push 到自己的 <a href="https://pages.github.com/">GitHub Pages</a> 的話請記得更改自己的 <a href="http://git-scm.com/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E-%E8%88%87%E9%81%A0%E7%AB%AF%E5%8D%94%E5%90%8C%E5%B7%A5%E4%BD%9C">git remote</a> 後切換到自己的 gh-pages 的分支下！</p>
-
-<p><img src=".././markdowns/2014-12-21_02-59-43/img/chmod%20777%20..png" alt="chmod 777 ."></p>
-
-<p>完成以上步驟後，就可以開始新增文章啦！</p>
+<p>首先開啟終端機，開啟終端機快捷鍵: <code>Ctrl + Alt + T</code></p>
 
 <p><br></p>
 
-<h3>新增文章</h3>
+<h3>步驟</h3>
 
-<p>預設的文章存放位置在 <code>markdowns/</code> 下，基本上資料夾代表<strong>文章時間</strong>，其時間格式因為資料夾名稱不支援 <code>:</code> 的符號，所以這邊我定義格式為 <code>yyyy-mm-dd_hh-ii-ss</code>。</p>
+<ul>
+<li><p>先切換使用者至 <strong>root權限</strong> 以便後面步驟不用每次都要求認證，所以終端機先輸入 <code>sudo du</code>，此時會要你輸入 <strong>root密碼</strong>，輸入完密碼後終端機之後便會以 root身分 執行指令。</p></li>
+<li><p>先將位置移到根目錄，可以使用 <code>cd ~</code> 移到根目錄。</p></li>
+<li><p>安裝 MySQL，終端機輸入 <code>apt-get install mysql-server mysql-client</code>，安裝過程中會要求設定 <strong>MySQL 的密碼</strong>，輸入完後便可以完成安裝 MySQL。</p></li>
+<li><p>安裝 Apache2，終端機輸入 <code>apt-get install apache2</code>，安裝完後<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>便可以開啟瀏覽器並且輸入網址 <a href="http://127.0.0.1">http://127.0.0.1</a> 後，就可以瀏覽。</p></li>
+<li><p>安裝 php5，終端機輸入 <code>apt-get install php5 libapache2-mod-php5</code>，安裝完後重新開啟 Apache 後就有 php 功能了，重新開啟 Apache 指令為 <code>/etc/init.d/apache2 restart</code>。</p></li>
+<li><p>此時 Server 就具備有了 php 的功能，所以可以選寫一個 <strong>簡單的php程式</strong> 列出目前的 php 所開啟的功能，終端機輸入指令 <code>vi /var/www/info.php</code> 用 vi 編輯器<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>新增檔名為 <strong>info.php</strong> 文件至 <code>/var/www/</code> 並且編輯它。</p></li>
+<li>
+<p>info.php 文件內容程式碼就輸入以下內容 :</p>
 
-<p><img src=".././markdowns/2014-12-21_02-59-43/img/create%20article.png" alt="create article"></p>
+<pre><code>  &lt;?php
+    phpinfo ();
+  ?&gt;
+</code></pre>
 
-<p><br>
-新增玩資料夾後，內便可以新增文章啦，首先建立一個 <code>.md</code> 的檔案並且開啟它，在 mac 系統上面開啟 .md 檔案的應用程式建議可以使用 <a href="http://25.io/mou/">mou</a>，它是一個不錯的<strong>免費</strong> markdown 應用程式！</p>
+<p>  以上內容主要概意是使用內建函式 <strong>phpinfo</strong> 去列出目前 php 所具備開啟的功能；<br>
+  開啟瀏覽器，並且輸入網址 <a href="http://127.0.0.1/info.php">http://127.0.0.1/info.php</a> 後便可以瀏覽，但此時會發現還<strong>尚未</strong>有 MySQL 的功能。</p>
+</li>
+<li><p>將 MySQL 設定支援 php 使用，終端機輸入 <code>apt-cache search php5</code>。</p></li>
+<li>
+<p>然後再輸入</p>
 
-<p><img src=".././markdowns/2014-12-21_02-59-43/img/create%20blog.png" alt="create blog"></p>
-
-<p><br>
-當文章編輯完成後，將檔案匯出 <code>.html</code>，如果不想匯出 .html 的話可以更改 <code>config/system.php</code> 內的變數 <code>$_format</code> 的值，將其改成 <code>.md</code> 即可不用再匯出 .html。不過這邊建議使用 .html 格式比較保險 ：）</p>
-
-<p><img src=".././markdowns/2014-12-21_02-59-43/img/output%20html.png" alt="output html"></p>
-
-<p><br>
-匯出後的 .html 就放在跟 .md 一樣的位置即可！ 其檔名就會是文章的標題！</p>
-
-<p><img src=".././markdowns/2014-12-21_02-59-43/img/put%20html.png" alt="put html"></p>
-
-<p><br>
-同事在一樣的目錄下新增檔案名稱 <code>tags.txt</code> 的文字檔，就可以對此邊文章做設定標簽的功能！
-每個標簽皆用段行分開即可！</p>
-
-<p><img src=".././markdowns/2014-12-21_02-59-43/img/tag.png" alt="tag"></p>
-
-<p><br>
-完成文章新增、標籤設定後，就可以準備進入下一步驟啦！</p>
-
-<p><img src=".././markdowns/2014-12-21_02-59-43/img/article%20ok.png" alt="article ok"></p>
-
-<p><br></p>
-
-<h3>Build！</h3>
-
-<p>這個步驟主要在產生 html 的文件，首先開啟終端機，並且在資料夾內輸入指令 <code>php build.php</code>，就可以產生出靜態 .html 頁面啦！</p>
-
-<p><img src=".././markdowns/2014-12-21_02-59-43/img/build.png" alt="build"></p>
-
-<p><br>
-完成 build 後，就可開啟網址 <code>http://127.0.0.1/blog/</code> 後，就可以看到自己所建立的文章啦！</p>
-
-<p><img src=".././markdowns/2014-12-21_02-59-43/img/ok.png" alt="ok"></p>
+<pre><code>  apt-get install php5-mysql php5-curl php5-gd php5-intl php-pear php5-imagick php5-imap php5-mcrypt php5-memcache php5-ming php5-ps php5-pspell php5-recode php5-snmp php5-sqlite php5-tidy php5-xmlrpc php5-xsl
+</code></pre>
+</li>
+<li><p>接著再重新啟動 Apache，一樣是終端機輸入 <code>/etc/init.d/apache2 restart</code>，此時再開啟(重新整理)一次 <code>http://127.0.0.1/info.php</code> 後就可以發現有了 MySQL 的功能了!</p></li>
+<li><p>安裝 phpMyAdmin，終端機輸入 <code>apt-get install phpmyadmin</code>，安裝過程中會要求選擇此 phpMyAdmin 給哪種系統使用，請選擇 Apache2 即可。之後會要求 <em>Configure database for phpmyadmin with dbconfig-common?</em> <strong>選擇 NO</strong> 即可。</p></li>
+<li><p>完成以上動作後，便可以至 <a href="http://www.phpmyadmin.net/home_page/index.php">phpMyAdmin網站</a> 下載 phpMyAdmin 壓縮包，檔案下載完後解壓縮<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup>並且移到 Apache 的根目錄<sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup>，然後改資料夾名稱為 phpMyAdmin，解開完後的資料夾位置會在 <code>/home/</code> 再將資料夾複製到跟目錄即可<sup id="fnref:5"><a href="#fn:5" rel="footnote">5</a></sup>。</p></li>
+<li><p>完成後，開啟瀏覽器並且輸入網址 : <a href="http://127.0.0.1/phpMyAdmin">http://127.0.0.1/phpMyAdmin</a> 後便可以使用 phpMyAdmin 的功能，帳號密碼為你資料庫的帳號密碼，預設帳號為 <strong>root</strong>。</p></li>
+</ul>
+<blockquote><p>以上步驟參考網站: <a href="http://www.howtoforge.com/installing-apache2-with-php5-and-mysql-support-on-ubuntu-12.04-lts-lamp">http://www.howtoforge.com/installing-apache2-with-php5-and-mysql-support-on-ubuntu-12.04-lts-lamp</a></p></blockquote>
 
 <p><br></p>
 
-<h3>小總結</h3>
+<h3>2013.08.03 21:44 補充</h3>
 
-<p>基本上整體程式作品大致上就是這樣一個 run，主要是興趣寫作啦，如果有興趣的各位，歡迎 clone 回去用吧 ：）</p>
+<p>Windows 安裝 Apache2、php5、MySQL、phpMyAdmin...等</p>
+
+<p>可以參考 : http://always-coding.blogspot.tw/2013/08/apachemysqlphp.html</p>
+<div class="footnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Apache 預設的根目錄為 <code>/var/www/</code><a href="#fnref:1" rev="footnote">↩</a></p>
+</li>
+<li id="fn:2">
+<p>vi 編輯器的使用方式與指令可以參考 : <a href="http://www2.nsysu.edu.tw/csmlab/unix/vi_command.htm">http://www2.nsysu.edu.tw/csmlab/unix/vi_command.htm</a> 以及 <a href="http://linux.vbird.org/linux_basic/0310vi/0310vi.php">http://linux.vbird.org/linux_basic/0310vi/0310vi.php</a>  <a href="#fnref:2" rev="footnote">↩</a></p>
+</li>
+<li id="fn:3">
+<p>解壓縮指令可以參考網頁 : <a href="http://fuglemanpeter.blogspot.tw/2012/08/targz-tarbz2.html">http://fuglemanpeter.blogspot.tw/2012/08/targz-tarbz2.html</a><a href="#fnref:3" rev="footnote">↩</a></p>
+</li>
+<li id="fn:4">
+<p>預設的根目錄為 <code>/var/www/</code><a href="#fnref:4" rev="footnote">↩</a></p>
+</li>
+<li id="fn:5">
+<p>解壓縮、複製的指令要注意正確與否，經常造成錯誤原因都是因為路徑打錯，複製資料夾以及重新命名的指令可以參考網頁 : <a href="http://www.arthurtoday.com/2010/09/ubuntu-cp-mv.html#.UeqFDSEW0ak">http://www.arthurtoday.com/2010/09/ubuntu-cp-mv.html#.UeqFDSEW0ak</a><a href="#fnref:5" rev="footnote">↩</a></p>
+</li>
+</ol>
+</div>
+
 </div>
           <div class='info clearfix'>
             <div class='tags all'>
-                          <span><a href=".././tag/GitHub">GitHub</a></span>
+                          <span><a href=".././tag/LAMP">LAMP</a></span>
+                            <span><a href=".././tag/Apache">Apache</a></span>
+                            <span><a href=".././tag/PHP">PHP</a></span>
+                            <span><a href=".././tag/MySQL">MySQL</a></span>
+                            <span><a href=".././tag/phpMyAdmin">phpMyAdmin</a></span>
                       </div>
           </div>
         </div>
@@ -184,7 +187,7 @@
 
       <div class='right'>
                 <div class='pin oa_infos'>
-                <div class='message hide' data-name='github上建立自己的blog'></div>
+                <div class='message hide' data-name='linux ubuntu 12.04 安裝 apache2、php5、mysql、phpmyadmin'></div>
                 <div class='line1'></div><div class='line2'></div>
                 <a href='http://www.ioa.tw' target='_blank'>
                   <div class='avatar_outline'>

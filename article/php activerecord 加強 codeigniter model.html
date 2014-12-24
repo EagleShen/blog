@@ -2,22 +2,22 @@
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta http-equiv="Content-Language" content="zh-tw">
-    <title>github上建立自己的blog - OA's blog</title>
+    <title>php activerecord 加強 codeigniter model - OA's blog</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
 
     <meta name="robots" content="index,follow" />
     <meta name="author" content="吳政賢(OA Wu)" />
-    <meta name="keywords" content="吳政賢(OA Wu) | OA's blog | GitHub" />
-    <meta name="description" content="因為最近才知道 GitHub 有提供免費的 GitHub Pages 服務，所以就利用自己所會的工具(php、html、js、css)來做個玩具！那就是利用 GitHub Pages 來建置自己的部落格！！若是我記得沒錯，市面上好像有很多很多大大做過一樣的東西(ex: octopress... 等)了，但身為程式人，就是要自己來做一個屬於自己的作品！這項作品基本上被需要幾個條件，因為我是在 Mac 系統上開發的，而其他系統我沒測試，所以不敢說可用！而 Mac 上也要開啟 apache 以及 php 的功能。P.S. 如果懶得看這些文字敘述的話..... 我也有製作了簡單的 Youtube Demo!步驟開始首…" />
+    <meta name="keywords" content="吳政賢(OA Wu) | OA's blog | PHP | Codeigniter | PHP ActiveRecord" />
+    <meta name="description" content="說明繼上次初步講解了 CodeIgniter 的使用後，這次整理了最近學到的東西 PHP ActiveRecord，他是 CI 的一個 spark 擴充功能，在 Linux 或者 MAC OS 其實比較好安裝，如果要在 windows 上就不好弄了..其主要是將 CI Model 加強化的 ORM，讓 Model 在使用資料庫上更加的人性化，Google 一下就會有很多資料了，在這邊就不多做解釋了。不過要注意 如果要使用 PHP ActiveRecord 的話，請先確定 PHP 版本是少要到 3 以上 !以及 php.ini 內的 php_pdo_mysql.dll 是否有被啟用!!步驟安裝方法其實 Google 到的資訊不多，但最主要參考 http://www.y…" />
 
     <meta property="og:site_name" content="OA's blog" />
     <meta property="og:type" content="profile" />
-    <meta property="og:image" content="http://comdan66.github.io/blog/markdowns/2014-12-21_02-59-43/img/chmod%20777%20..png" alt="chmod 777 ." />
-    <meta property="og:title" content="github上建立自己的blog - OA's blog" />
+    <meta property="og:image" content="http://comdan66.github.io/blog/img/og.png" />
+    <meta property="og:title" content="php activerecord 加強 codeigniter model - OA's blog" />
     <meta property="og:locale" content="zh_TW" />
-    <meta property="og:description" content="因為最近才知道 GitHub 有提供免費的 GitHub Pages 服務，所以就利用自己所會的工具(php、html、js、css)來做個玩具！那就是利用 GitHub Pages 來建置自己的部落格！！若是我記得沒錯，市面上好像有很多很多大大做過一樣的東西(ex: octopress... 等)了，但身為程式人，就是要自己來做一個屬於自己的作品！這項作品基本上被需要幾個條件，因為我是在 Mac 系統上開發的，而其他系統我沒測試，所以不敢說可用！而 Mac 上也要開啟 apache 以及 php 的功能。P.S. 如果懶得看這些文字敘述的話..... 我也有製作了簡單的 Youtube Demo!步驟開始首…" />
-    <meta property="og:url" content="http://comdan66.github.io/blog/article/github上建立自己的blog.html" />
+    <meta property="og:description" content="說明繼上次初步講解了 CodeIgniter 的使用後，這次整理了最近學到的東西 PHP ActiveRecord，他是 CI 的一個 spark 擴充功能，在 Linux 或者 MAC OS 其實比較好安裝，如果要在 windows 上就不好弄了..其主要是將 CI Model 加強化的 ORM，讓 Model 在使用資料庫上更加的人性化，Google 一下就會有很多資料了，在這邊就不多做解釋了。不過要注意 如果要使用 PHP ActiveRecord 的話，請先確定 PHP 版本是少要到 3 以上 !以及 php.ini 內的 php_pdo_mysql.dll 是否有被啟用!!步驟安裝方法其實 Google 到的資訊不多，但最主要參考 http://www.y…" />
+    <meta property="og:url" content="http://comdan66.github.io/blog/article/php activerecord 加強 codeigniter model.html" />
 
     <link href="../css/frame.css" rel="stylesheet" type="text/css">
     <link href="../css/frame_pc.css" rel="stylesheet" type="text/css">
@@ -90,93 +90,101 @@
       <div class='left'>
         <div class='block paper article'>
           <div class='title clearfix'>
-            <h2>github上建立自己的blog</h2>
-            <div class='date timeago' data-time='2014-12-21 02:59:43'>2014-12-21 02:59:43</div>
+            <h2>php activerecord 加強 codeigniter model</h2>
+            <div class='date timeago' data-time='2013-07-27 00:49:00'>2013-07-27 00:49:00</div>
           </div>
           <div class='content'>
-<p>因為最近才知道 GitHub 有提供免費的 <a href="https://pages.github.com/">GitHub Pages</a> 服務，所以就利用自己所會的工具(php、html、js、css)來做個玩具！那就是利用 <a href="https://pages.github.com/">GitHub Pages</a> 來建置自己的部落格！！</p>
+<h3>說明</h3>
 
-<p><br>
-若是我記得沒錯，市面上好像有很多很多大大做過一樣的東西(ex: <a href="http://octopress.org/">octopress</a>... 等)了，但身為程式人，就是要自己來做一個屬於自己的作品！</p>
+<p>繼上次初步講解了 <a href="http://comdan66.github.io/blog/article/USBWebserver%20%E4%BB%A5%E5%8F%8A%20CodeIgniter%20%E5%88%9D%E6%AD%A5%E4%BB%8B%E7%B4%B9.html">CodeIgniter</a> 的使用後，這次整理了最近學到的東西 <strong>PHP ActiveRecord</strong>，他是 CI 的一個 spark 擴充功能，在 Linux 或者 MAC OS 其實比較好安裝，如果要在 windows 上就不好弄了..</p>
 
-<p><br></p>
+<p>其主要是將 CI Model 加強化的 ORM，讓 Model 在使用資料庫上更加的人性化，Google 一下就會有很多資料了，在這邊就不多做解釋了。</p>
 
-<p>這項作品基本上被需要幾個條件，因為我是在 Mac 系統上開發的，而其他系統我沒測試，所以不敢說可用！而 Mac 上也要開啟 apache 以及 php 的功能。</p>
-
-<p>P.S. 如果懶得看這些文字敘述的話..... 我也有製作了簡單的 Youtube Demo!</p>
-
-<iframe src="https://www.youtube.com/embed/pUBWKUEb7Do" width="90%" height="400" frameborder="0" allowfullscreen></iframe>
-
+<blockquote><p>不過要注意 如果要使用 PHP ActiveRecord 的話，請先確定 <strong>PHP 版本是少要到 3 以上</strong> !<br>
+以及 <strong>php.ini</strong> 內的 <strong>php_pdo_mysql.dll</strong> 是否有被啟用!!</p></blockquote>
 
 <p><br></p>
 
-<h3>步驟開始</h3>
+<h3>步驟</h3>
 
-<p>首先，先至我的 <a href="https://github.com/comdan66/blog">GitHub</a> 將 blog 這個 repository clone 下來！指令: <code>git clone https://github.com/comdan66/blog.git</code>。</p>
+<p>安裝方法其實 Google 到的資訊不多，但最主要參考 <a href="http://www.youtube.com/watch?v=RL-loGlI2t4">http://www.youtube.com/watch?v=RL-loGlI2t4</a> 這部教學內容就夠了，這位作者還放了很多關於使用例子。以下是影片中安裝概略，如果有差錯請自行再參考影片! 基本上下面的方法在 Windows &amp; USBWebserver v8.5 上面也是可以成功的！</p>
 
-<p><br>
-當 Clone 下來後，進入資料夾並且先變更資料夾權限，以便於 php 產生靜態頁面！如果要 push 到自己的 <a href="https://pages.github.com/">GitHub Pages</a> 的話請記得更改自己的 <a href="http://git-scm.com/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E-%E8%88%87%E9%81%A0%E7%AB%AF%E5%8D%94%E5%90%8C%E5%B7%A5%E4%BD%9C">git remote</a> 後切換到自己的 gh-pages 的分支下！</p>
-
-<p><img src=".././markdowns/2014-12-21_02-59-43/img/chmod%20777%20..png" alt="chmod 777 ."></p>
-
-<p>完成以上步驟後，就可以開始新增文章啦！</p>
-
-<p><br></p>
-
-<h3>新增文章</h3>
-
-<p>預設的文章存放位置在 <code>markdowns/</code> 下，基本上資料夾代表<strong>文章時間</strong>，其時間格式因為資料夾名稱不支援 <code>:</code> 的符號，所以這邊我定義格式為 <code>yyyy-mm-dd_hh-ii-ss</code>。</p>
-
-<p><img src=".././markdowns/2014-12-21_02-59-43/img/create%20article.png" alt="create article"></p>
-
-<p><br>
-新增玩資料夾後，內便可以新增文章啦，首先建立一個 <code>.md</code> 的檔案並且開啟它，在 mac 系統上面開啟 .md 檔案的應用程式建議可以使用 <a href="http://25.io/mou/">mou</a>，它是一個不錯的<strong>免費</strong> markdown 應用程式！</p>
-
-<p><img src=".././markdowns/2014-12-21_02-59-43/img/create%20blog.png" alt="create blog"></p>
-
-<p><br>
-當文章編輯完成後，將檔案匯出 <code>.html</code>，如果不想匯出 .html 的話可以更改 <code>config/system.php</code> 內的變數 <code>$_format</code> 的值，將其改成 <code>.md</code> 即可不用再匯出 .html。不過這邊建議使用 .html 格式比較保險 ：）</p>
-
-<p><img src=".././markdowns/2014-12-21_02-59-43/img/output%20html.png" alt="output html"></p>
-
-<p><br>
-匯出後的 .html 就放在跟 .md 一樣的位置即可！ 其檔名就會是文章的標題！</p>
-
-<p><img src=".././markdowns/2014-12-21_02-59-43/img/put%20html.png" alt="put html"></p>
-
-<p><br>
-同事在一樣的目錄下新增檔案名稱 <code>tags.txt</code> 的文字檔，就可以對此邊文章做設定標簽的功能！
-每個標簽皆用段行分開即可！</p>
-
-<p><img src=".././markdowns/2014-12-21_02-59-43/img/tag.png" alt="tag"></p>
-
-<p><br>
-完成文章新增、標籤設定後，就可以準備進入下一步驟啦！</p>
-
-<p><img src=".././markdowns/2014-12-21_02-59-43/img/article%20ok.png" alt="article ok"></p>
+<ul>
+<li><p>首先當然先下載好 <a href="http://www.codeigniter.org.tw/">CodeIgniter</a> ，下載後檔案 <a href="https://ellislab.com/codeigniter/user-guide/installation/downloads.html">CodeIgniter_2.1.3.zip</a> 即是。</p></li>
+<li><p>可到 <a href="http://getsparks.org/install#option-1">http://getsparks.org/install#option-1</a> 看安裝過程，先下載 spark-manager，下載後檔案 <a href="http://getsparks.org/download">spark-manager-0.0.9.zip</a> 即是。</p></li>
+<li><p>壓縮 <a href="https://ellislab.com/codeigniter/user-guide/installation/downloads.html">CodeIgniter_2.1.3.zip</a> 後可以先命名該資料夾名稱為 <strong>CodeIgniter</strong> 並且放於你的 Web Server 的根目錄，在目錄內新增一個資料夾命名為 <strong>tools</strong>，並且將 spark-manager-0.0.9.zip 的內容解壓縮至此。</p></li>
+<li><p>一樣在 <a href="http://getsparks.org/install#option-1">http://getsparks.org/install#option-1</a> 下載 <a href="http://getsparks.org/static/install/MY_Loader.php.txt">MY_Loader.php</a>，並且將檔案放置 <code>CodeIgniter/application/core/</code> 內。</p></li>
+<li><p>使用 command line 了，先開啟 cmd.exe 並且位置移到 CodeIgniter 目錄下，然後下指令 <code>php tools/spark install php-activerecord</code> 並且執行，完後會發現 CodeIgniter 目錄下會多出一個資料夾名稱為 <strong>sparks</strong> 那就代表成功啦<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>。</p></li>
+<li><p>開啟 <code>/CodeIgniter/application/config/autoload.php</code> 並且加入一行程式碼 <code>$autoload['sparks'] = array('php-activerecord/0.0.2');</code> 即可<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>。</p></li>
+</ul>
+<p>基本上由以上步驟就算完成了 CodeIgniter 的 PHP ActiveRecord  匯入。</p>
 
 <p><br></p>
 
-<h3>Build！</h3>
+<h3>Demo</h3>
 
-<p>這個步驟主要在產生 html 的文件，首先開啟終端機，並且在資料夾內輸入指令 <code>php build.php</code>，就可以產生出靜態 .html 頁面啦！</p>
+<p>如果想在自己試試看是真的安裝成功，可以自己試試看一個 Model  ，不過首先你要先設定資料庫連線。</p>
 
-<p><img src=".././markdowns/2014-12-21_02-59-43/img/build.png" alt="build"></p>
+<ul>
+<li><p>先開啟 <code>/CodeIgniter/application/config/database.php</code> 填寫要連接資料庫的 username、password、database... 等資訊<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup>。</p></li>
+<li><p>建立資料表並且命名為 members，可以新增幾個欄位，並且先新增幾筆資料。</p></li>
+<li>
+<p>在 <code>/CodeIgniter/application/models/</code> 目錄下新增文件，並且命名為 member.php，並且將內容修改成如下 :</p>
 
-<p><br>
-完成 build 後，就可開啟網址 <code>http://127.0.0.1/blog/</code> 後，就可以看到自己所建立的文章啦！</p>
+<pre><code>  &lt;?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+    class Member extends ActiveRecord\Model {
+      static $table_name = 'members';
+    }
+  ?&gt;
+</code></pre>
+</li>
+<li>
+<p>然後開啟文件 <code>/CodeIgniter/application/controllers/welcome.php</code>，將其內容修改成如下:</p>
 
-<p><img src=".././markdowns/2014-12-21_02-59-43/img/ok.png" alt="ok"></p>
+<pre><code>  &lt;?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+    class Welcome extends CI_Controller {
+      public function index()   {
+        $result = Member::all();
+        echo "&lt;pre&gt;";
+        print_r ($result);
+        echo "&lt;/pre&gt;";
+      }
+    }
+  ?&gt;
+</code></pre>
+</li>
+<li><p>以上步驟完後，再開啟瀏覽器，並且輸入網址 <a href="http://127.0.0.1/CodeIgniter/">http://127.0.0.1/CodeIgniter/</a> 即可看到結果。</p></li>
+</ul>
+<p>詳細的 PHP ActiveRecord 使用方式其實在官網都有詳細範例了，詳情可以參考 <a href="http://www.phpactiverecord.org/">http://www.phpactiverecord.org/</a>。</p>
+
+<blockquote><p><strong>※ 不負責任筆記</strong>: 以上如果有任何問題，歡迎提問吧，在我電腦上目前安裝以及使用上階尚未出錯，但不代表是絕對正確XD</p></blockquote>
 
 <p><br></p>
 
-<h3>小總結</h3>
+<h3>2013.08.03 21:45 補充</h3>
 
-<p>基本上整體程式作品大致上就是這樣一個 run，主要是興趣寫作啦，如果有興趣的各位，歡迎 clone 回去用吧 ：）</p>
+<p>完整自己手動安裝可以參考這篇 : http://always-coding.blogspot.tw/2013/08/php-codeigniter-frame-php-activerecord.html</p>
+<div class="footnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>此步驟要有安裝 php 才可行，若是使用 之前文章 提到的 USBWebserver 的話，就 cmd.exe 目錄移到 USBWebserver 的 php目錄 下，並在此目錄下指令 php ../root/CodeIgniter/tools/spark install php-activerecord 執行過程會有多個錯誤警告訊息，但按確定繼續即可，完後會發現 php 目錄下多出 sparks 資料夾，再將其移到 CodeIgniter 目錄下即可。<a href="#fnref:1" rev="footnote">↩</a></p>
+</li>
+<li id="fn:2">
+<p>要注意 /CodeIgniter/sparks/php-activerecord 目錄下的版本資料夾是否也為 0.0.2 ，若是版本資料夾不一樣，則請自行將程式碼改成一樣即可。<a href="#fnref:2" rev="footnote">↩</a></p>
+</li>
+<li id="fn:3">
+<p>若是使用 USBWebserver  的話 username 為 root ， password 為 usbw 。<a href="#fnref:3" rev="footnote">↩</a></p>
+</li>
+</ol>
+</div>
+
 </div>
           <div class='info clearfix'>
             <div class='tags all'>
-                          <span><a href=".././tag/GitHub">GitHub</a></span>
+                          <span><a href=".././tag/PHP">PHP</a></span>
+                            <span><a href=".././tag/Codeigniter">Codeigniter</a></span>
+                            <span><a href=".././tag/PHP%20ActiveRecord">PHP ActiveRecord</a></span>
                       </div>
           </div>
         </div>
@@ -184,7 +192,7 @@
 
       <div class='right'>
                 <div class='pin oa_infos'>
-                <div class='message hide' data-name='github上建立自己的blog'></div>
+                <div class='message hide' data-name='php activerecord 加強 codeigniter model'></div>
                 <div class='line1'></div><div class='line2'></div>
                 <a href='http://www.ioa.tw' target='_blank'>
                   <div class='avatar_outline'>
